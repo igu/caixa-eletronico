@@ -1,30 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-
-
-void menuCaixa(){
-    printf("\n\n### CAIXA ELETRONICO - Consulte sua conta ###");
-    printf("\n                  =========================\n");
-    printf("                  |     1 - Sacar           |\n");
-    printf("                  |     2 - Depositar       |\n");
-    printf("                  |     3 - Verifcar saldo  |\n");
-    printf("                  |     0 - Sair            |\n");
-    printf("                  =========================\n");
-}
-
-void menuGerencial(){
-    printf("\n\n###         Bancos Coleg's  ###");
-    printf("\n                  =========================\n");
-    printf("                  |     1 - Criar Conta           |\n");
-    printf("                  |     2 - Alterar Conta           |\n);
-    printf("                  |     3 - Deletar Conta       |\n");
-    printf("                  |     0 - Sair            |\n");
-    printf("                  =========================\n");
-}
+#include <string.h>
+#include "biblioteca.h"
 
 int main()
 {
-    menuGerencial();
+    char novamente[1];
+    int opcao;
+    do{
+        inicio();
+        scanf("%d",&opcao);
+        if(opcao == 1){
+            // BLOCO  DE CÓDIGO
+        }else if(opcao == 2){
+           // BLOCO  DE CÓDIGO
+        }else if(!opcao){
+            break;
+        }else{
+            printf("Opcao invalida, vamos tentar novamente? [s]im / [n]ao\n");
+            scanf("%s",novamente);
+        }
+    }while(strcmp(novamente,"s"));
     return 0;
 }
