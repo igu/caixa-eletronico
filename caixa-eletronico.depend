@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1446667744 source:c:\users\20181014040020.ifrn\desktop\caixa-eletronico\main.c
+	<stdio.h>
+	<stdlib.h>
+
