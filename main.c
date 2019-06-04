@@ -45,7 +45,26 @@ int main()
         inicio();
         scanf("%d",&opcao);
         if(opcao == 1){
-            menuCaixa();
+            int nAgencia, nConta, nSenha;
+            printf("\n\n### CAIXA ELETRONICO - Autenticacao ###");
+            printf("\n Número Agencia\n:");
+            scanf("%d",&nAgencia);
+            printf("\n Número Conta\n:");
+            scanf("%d",&nConta);
+            printf("\n Senha\n:");
+            scanf("%d",&nSenha);
+            con usuarioAutenticado = checkUser(listaContas,nAgencia,nConta,nSenha);
+            if(usuarioAutenticado.senha == nSenha){
+                 menuCaixa();
+                 scanf("%d",&opBox);
+                if(opBox == 1){
+
+                }else if(opBox == 3){
+                    printf("Saldo atual: %.2lf", usuarioAutenticado.saldo);
+                }
+            }else{
+                printf("Dados informados inválidos!\n");
+            }
         }else if(opcao == 2){
            menuGerencial();
            scanf("%d",&opAdm);
@@ -87,8 +106,18 @@ int main()
                     fprintf(f,"0 0 1 1000 %d %d %s %d %s 0 %.2lf\n",numConta++,senha,dest,idade,cpf,(idade*100.0));
                 }
                 printf("Conta criada com sucesso!");
+
+           }else if(opAdm == 2){
+                // FAREI OUTRA HORA
+                break;
+           }else if(opAdm == 3){
+                // remover_conta(listaContas, cpf);
+                // FALTA IMPLEMENTAR O RESTO
+                break;
            }else if(opAdm == 4){
                 listar_contas(listaContas);
+           }else{
+                break;
            }
         }else if(!opcao){
             break;

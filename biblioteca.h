@@ -32,6 +32,8 @@ void inicio(){
 }
 
 
+
+
 void menuCaixa(){
     printf("\n\n### CAIXA ELETRONICO - Consulte sua conta ###");
     printf("\n                  =========================\n");

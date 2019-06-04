@@ -1,4 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
+
+#define ARQUIVO_ESCOLHIDO 1
+#define LINHA_DO_ARQUIVO 2
 
 int checkIdade(int idade){
     if(idade >= 18) return 1;
@@ -17,7 +22,6 @@ int checkCpf(char *cpf){
 
 int listar_contas(p_con c){
     printf("\nLista de contas:\n");
-    int i;
     if(c != NULL){
         while (c->prox != NULL){
             printf("-----------DADOS-------------\n");
@@ -45,4 +49,22 @@ int listar_contas(p_con c){
         return 1;
     }
     return 0;
+}
+
+
+con checkUser(p_con c, int nAgencia, int nConta, int nSenha){
+    if(c != NULL){
+        while (c->prox != NULL){
+            if( ((c->agencia == nAgencia && c->nConta == nConta) && (c->senha == nSenha)) ) return *c;
+            c = c->prox;
+        }
+    }else{
+        return *c;
+    }
+    return *c;
+}
+
+
+int remover_conta(char *cpf, p_con c){
+    // IREI IMPLEMENTAR
 }

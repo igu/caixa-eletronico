@@ -11,15 +11,17 @@
 
 1558384613 c:\users\20181014040020.ifrn\documents\caixa-eletronico\biblioteca.h
 
-1559623112 source:/home/igu/Desktop/caixa-eletronico/main.c
+1559663565 source:/home/igu/Desktop/caixa-eletronico/main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"biblioteca.h"
 	"funcoes.h"
 
-1559618690 /home/igu/Desktop/caixa-eletronico/biblioteca.h
+1559662878 /home/igu/Desktop/caixa-eletronico/biblioteca.h
 
-1559620859 /home/igu/Desktop/caixa-eletronico/funcoes.h
+1559663248 /home/igu/Desktop/caixa-eletronico/funcoes.h
+	<stdio.h>
+	<stdlib.h>
 	<string.h>
 
