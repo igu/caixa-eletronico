@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="biblioteca.h" />
+		<Unit filename="funcoes.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
